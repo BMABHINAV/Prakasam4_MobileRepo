@@ -1,0 +1,21 @@
+{
+  "name": "Agastir Citizen Portal",
+  "short_name": "Agastir",
+  "description": "Report local incidents to your district police.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Andhra_Pradesh_Police_Seal.svg/1024px-Andhra_Pradesh_Police_Seal.svg.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Andhra_Pradesh_Police_Seal.svg/1024px-Andhra_Pradesh_Police_Seal.svg.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
