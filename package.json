@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd \"Citizen_Portal(mobile PWA)\" && npm install && npm run build && cp -r dist ../dist"
+    "build": "cd \"Citizen_Portal(mobile PWA)\" && npm install && npm run build && cp -r dist ../public"
   }
 }
