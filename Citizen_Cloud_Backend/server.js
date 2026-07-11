@@ -131,7 +131,13 @@ app.post("/api/incidents", async (req, res) => {
   res.json({ message: "Incident reported", incident: data[0] });
 });
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`[SERVER] Citizen Cloud Backend running on port ${PORT}`);
-});
+// Export for Vercel serverless
+export default app;
+
+// Only listen locally (not on Vercel)
+if (process.env.NODE_ENV !== "production") {
+  const PORT = process.env.PORT || 3001;
+  app.listen(PORT, () => {
+    console.log(`[SERVER] Citizen Cloud Backend running on port ${PORT}`);
+  });
+}
